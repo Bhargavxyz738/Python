@@ -17,15 +17,30 @@ ALLOWED_IMPORTS = [
     "random",
     "datetime",
     "numpy",
+    "requests",
+    "json",
+    "string",
     "os",
     "sys",
-    "json",
     "collections",
     "re",
     "time",
-    "subprocess"
+    "subprocess",
+    "itertools",
+    "functools",
+    "typing",
+    "statistics",
+    "decimal",
+    "hashlib",
+    "uuid",
+    "copy",
+    "heapq",
+    "bisect",
+    "operator",
+    "shlex",
+    "dataclasses",
+    "textwrap"
 ]
-
 if not os.path.exists(TEMP_DIR):
     os.makedirs(TEMP_DIR)
 
