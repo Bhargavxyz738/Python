@@ -6,9 +6,10 @@ import uuid
 import traceback
 import shutil
 import time
+from flask_cors import CORS
 
 app = Flask(__name__)
-
+CORS(app)
 
 TEMP_DIR = "temp_scripts"
 MAX_EXECUTION_TIME = 5  
@@ -132,4 +133,4 @@ def hello():
     return "Hello, this is the python execution service!"
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=5000)  # Use 0.0.0.0 to make it accessible from outside
+    app.run(debug=True, host="0.0.0.0", port=5000)
